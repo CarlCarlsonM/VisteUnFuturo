@@ -3,23 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viste Un Futuro</title>
+    <title>Viste Un Futuro - Registro</title>
     <link href="estilos.css" rel="stylesheet"/>
   </head>
   <body>
     <div>
       <header>
-        <h1>Encabezado</h1>
+        <h1>Viste Un Futuro</h1>
       </header>
       <hr>
       <main>
-        <section>
-          <p>Incluir Contenido</p>
-        </section>
+        <form>
+          <fieldset>
+            <legend>Crea una cuenta</legend>
+            <input type="text" placeholder="Nombres" required>
+            <input type="text" placeholder="Apellidos" required>
+            <input type="text" placeholder="Correo electrónico" required>
+            <input type="text" placeholder="Número de teléfono" required>
+            <input type="text" placeholder="Dirección" required>
+            <input type="text" placeholder="Ciudad" required>
+            <input type="password" placeholder="Escribe tu contraseña" required>
+            <input type="password" placeholder="Repite tu contraseña" required>
+            <select class="combo">
+              <option>Selecciona una pregunta de seguridad...</option>
+              <option>Opción 1</option>
+              <option>Opción 2</option>
+              <option>Opción 3</option>
+              <option>Opción 4</option>
+            </select>
+            <input type="text" placeholder="Respuesta a la pregunta" required>
+            <button type="submit">Crear una Cuenta</button>
+          </fieldset>
+        </form>
       </main>
       <hr>
       <footer>
-        <p>Incluir pie de página</p>
+        <p>© El equipo de Viste Un Futuro - 2022</p>
       </footer>
     </div>
   </body>
