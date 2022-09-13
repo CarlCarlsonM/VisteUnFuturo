@@ -3,17 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viste Un Futuro</title>
+    <title>Viste Un Futuro - Registro Clasificado</title>
     <link href="estilos.css" rel="stylesheet"/>
     <link rel="icon" href="imagenes/icono_app.png" type="image/png" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">       
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://www.ionos.es/digitalguidepath/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <div>
@@ -25,46 +17,67 @@
         <form>
           <fieldset>
             <legend>Crea un clasificado</legend>
-            <input type="text" placeholder="Titulo" required><br>
-            <input type="text" placeholder="Cuentanos tu historia" required><br>
-            <button type="submit">Agregar prenda</button><br>
+            <input type="text" placeholder="Titulo" required>
+            <input type="text" placeholder="Cuentanos tu historia" required>
             <fieldset>
+              <legend>Incluye</legend>
+              <button type="submit">Agregar prenda</button>
               <fieldset>
                 <legend>Genero</legend>
-                <input type="radio" name="cuando" value="Caballero" checked> Caballero <br>
-                <input type="radio" name="cuando" value="Dama"> Dama <br>
+                <input type="radio" value="Caballero" checked> Caballero <br>
+                <input type="radio" value="Dama"> Dama <br>
               </fieldset>
-              
-              Tipo de prenda: 
-              <select>
-              <option>Tipo 1</option>
-              <option>Tipo 2</option>
-              <option>Tipo 3</option>
-              <option>Tipo 4</option>
-              <option>Tipo 5</option>
-              <option>Tipo 6</option>
-              </select><br>
-              Talla: 
-              <select>
-              <option>Talla XS</option>
-              <option>Talla S</option>
-              <option>Talla M</option>
-              <option>Talla L</option>
-              <option>Talla XL</option>
-              <option>Talla XXL</option>
-              </select><br>
+              <fieldset>
+                <legend>Tipo de prenda</legend>
+                <select>
+                  <option>Tipo 1</option>
+                  <option>Tipo 2</option>
+                  <option>Tipo 3</option>
+                  <option>Tipo 4</option>
+                  <option>Tipo 5</option>
+                  <option>Tipo 6</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Talla de prenda</legend>
+                <select>
+                  <option>Talla XS</option>
+                  <option>Talla S</option>
+                  <option>Talla M</option>
+                  <option>Talla L</option>
+                  <option>Talla XL</option>
+                  <option>Talla XXL</option>
+                </select>
+              </fieldset>  
               <fieldset>
                 <legend>Estado</legend>
-                <input type="radio" name="cuando" value="Nuevo" checked>Nuevo<br>
-                <input type="radio" name="cuando" value="Usado">Usado<br>
-              </fieldset><br>
-              <input type="text" placeholder="Cantidad" required><br>
-              <button type="button">Agregar foto</button><br>
-              
+                <input type="radio" value="Nuevo" checked>Excelente
+                <input type="radio" value="Usado">Bueno
+                <input type="radio" value="Usado">Aceptable
+              </fieldset>
+              <fieldset>
+                <legend>Cantidad</legend>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Fotografia</legend>
+                <input type="text" placeholder="URL" required><button type="button">Agregar foto</button>  
+              </fieldset>                         
             </fieldset>
+            <button type="submit">Publicar</button>
+            <button>Cancelar</button>
           </fieldset>
-          <button type="submit">Guardar</button>
-          <button type="submit">Borrar</button>
         </form>
       </main>
       <hr>
