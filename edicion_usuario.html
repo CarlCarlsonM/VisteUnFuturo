@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viste Un Futuro</title>
+    <title>Viste Un Futuro - Edición Usuario</title>
     <link href="estilos.css" rel="stylesheet"/>
     <link rel="icon" href="imagenes/icono_app.png" type="image/png" />
   </head>
@@ -14,9 +14,34 @@
       </header>
       <hr>
       <main>
-        <section>
-          <p>Incluir Contenido</p>
-        </section>
+        <form>
+          <fieldset>
+            <legend>Modifica tu cuenta</legend>
+            <label for="#">Nombres:</label><br />
+            <input type="text" placeholder="Escribe tus nombres" required /><br />
+            <label for="#">Apellidos:</label><br />
+            <input type="text" placeholder="Escribe tus apellidos" required /><br />
+            <label for="#">Correo electrónico:</label><br />
+            <input type="text" placeholder="Escribe tu e-mail" required /><br />
+            <label for="#">Número de teléfono:</label><br />
+            <input type="text" placeholder="Escribe tu número de teléfono" required /><br />
+            <label for="#">Dirección:</label><br />
+            <input type="text" placeholder="Escribe tu dirección" required /><br />
+            <label for="#">Ciudad:</label><br />
+            <input type="text" placeholder="Escribe tu ciudad de residencia" required /><br />
+            <label for="#">Pregunta de seguridad:</label><br />
+            <select class="combo">
+              <option>Selecciona una pregunta de seguridad...</option>
+              <option>Opción 1</option>
+              <option>Opción 2</option>
+              <option>Opción 3</option>
+              <option>Opción 4</option>
+            </select><br />
+            <label for="#">Respuesta a la pregunta de seguridad:</label><br />
+            <input type="text" placeholder="Responde la pregunta de seguridad" required /><br />
+            <button type="submit">Hecho</button>
+          </fieldset>
+        </form>
       </main>
       <hr>
       <footer>
