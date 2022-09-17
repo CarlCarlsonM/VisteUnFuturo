@@ -1,0 +1,86 @@
+@font-face 
+{
+    font-family: Streetwear;
+    src: url("tipografias/Streetwear.otf");
+}
+
+* {
+    box-sizing:border-box;
+    font-family: Streetwear, Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+    background-image: url("imagenes/fondo.jpg");
+}
+
+header {
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: grey;
+}
+
+.info-usuario {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 500px;
+    background-color: white;
+    border: 5px solid;
+    border-color: grey;
+    padding: 20px;
+}
+
+.info-usuario-botones {
+    display: block;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 500px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    border: 5px solid;
+    border-color: grey;
+}
+
+fieldset {
+    border-color: transparent;
+}
+
+hr {
+    border: none;
+}
+
+input, select {
+    width: 400px;
+    margin: 10px 0;
+    border: 5px solid;
+    border-radius: 10px;
+    border-color: #269526;
+    padding: 10px;
+}
+
+a {
+    background-color: #269526;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #00d900;
+}
