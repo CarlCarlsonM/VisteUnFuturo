@@ -9,7 +9,7 @@
     font-family: Streetwear, Georgia, "Times New Roman", Times, serif;
 }
 
-body {
+body,header {
     background-image: url("imagenes/fondo.jpg");
 }
 
@@ -46,14 +46,14 @@ footer {
 }
 
 form {
-    margin: 0 auto;
-    max-width: 500px;
-    width: 500px;
-    display: block;
+    
     text-align: center;
-    background-color: white;
-    border: 5px solid;
-    border-color: grey;
+    padding: 50px 20px;
+    background-color: #a79c9ca6;
+    margin: calc(25% + 100px);
+    margin-top: 70px;
+    padding-top: 28px;
+    margin-bottom: 30px
 }
 
 fieldset {
@@ -66,15 +66,12 @@ hr {
 
 input, select {
     width: 400px;
-    margin: 10px 0;
-    border: 5px solid;
-    border-radius: 10px;
-    border-color: #269526;
+    
     padding: 10px;
 }
 
 a {
-    background-color: #269526;
+    background-color: #48e;
     color: white;
     padding: 10px 25px;
     text-decoration: none;
@@ -82,5 +79,5 @@ a {
 }
 
 a:hover {
-    background-color: #00d900;
+    background-color: #4957ec;
 }
