@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viste Un Futuro - Registro Clasificado</title>
     <link href="estilos.css" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">       
-        <script src="https://kit.fontawesome.com/330953a3ed.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="icon" href="imagenes/icono_app.png" type="image/png" />
+    <script src="https://kit.fontawesome.com/330953a3ed.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div>
-      <header>
-        <h1>Viste Un Futuro</h1>
-      </header>
-       <!-- barra -->
+    <header>        
+      <!-- barra -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="col-md-10 col-xs-6"></div>
+        <div class="col-md-8 col-xs-6">
+          <h1>Viste Un Futuro</h1>
+        </div>
         <div class="container-fluid">                
             <div class="col-md-2 col-xs-6">
                 <!-- icono de usuario -->
@@ -25,69 +24,51 @@
             </div>
             <div class="col-md-2 col-xs-6">
                 <!-- icono de carrito -->
-                <a href="inicio_sesion.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-user"></i></a>
+                <a href="informacion_usuario.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-user"></i></a>
                 <!-- finalizan iconos -->
             </div>
             <div class="col-md-2 col-xs-6">
+              <!-- icono de carrito -->
+              <a href="registro_clasificado.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-pencil-square"></i></a>
+              <!-- finalizan iconos -->
+            </div>
+            <div class="col-md-2 col-xs-6">
                 <!-- icono de usuario -->
-                <a href="registro_clasificado.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+                <a href="inicio_sesion.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-sign-in"></i></a>
             </div>
             <div class="col-md-2 col-xs-6">
               <!-- icono de usuario -->
-              <a href="inicio_sesion.html" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-share-from-square"></i></a>
+              <a href="#" class=" btn boton-tarjeta"  role="button"><i class="fa-sharp fa-solid fa-sign-out"></i></a>
           </div>
         </div>
-     </nav>
-
-    <!-- finaliza barra -->
-
-    <!-- carrusel de imagenes -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://imagenes.elpais.com/resizer/6TCeRjikycnTBzwBW8sMNv6YpWw=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/DYSEUE7YNJLDFVFCAFPZJ37E2I.jpg" class="d-block w-100" alt="..." width="15" height="250">
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.eliberico.com/wp-content/uploads/2021/09/como-donar-rolpa-londres.jpg" class="d-block w-100" alt="..." width="15" height="250">
-            </div>
-            <div class="carousel-item">
-                <img src="https://okdiario.com/img/2018/10/09/donar-ropa.jpg" class="d-block w-100" alt="..." width="15" height="250">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- finaliza carrusel -->
-      <hr>
-      <main>
-        <form>
+      </nav>
+      <!-- finaliza barra -->
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Crea tu clasificado</legend>
+          <div class="mb-3">
+            <label for="#">Título:</label>
+            <input type="text" class="form-control" placeholder="Escribe un título" required>
+          </div>
+          <div class="mb-3">
+            <label for="#">Descripción:</label>
+            <input type="text" class="form-control" placeholder="Cuéntanos tu historia" required>
+          </div>
           <fieldset>
-            <legend>Crea tu clasificado</legend>
-            <label for="#">Título:</label><br />
-            <input type="text" placeholder="Escribe un título" required name="Titulo"><br />
-            <label for="#">Descripción:</label><br />
-            <input type="text" placeholder="Cuéntanos tu historia" required name="Descripcion">
-            <fieldset>
-              <legend>Incluye tu prenda</legend>
-              <label for="#">Género:</label><br />
-              <select name="Genero">
+            <legend>Incluye tu prenda</legend>
+            <div class="mb-3">
+              <label for="#">Género:</label>
+              <select class="form-select">
                 <option>Selecciona...</option>
                 <option>Caballero</option>
                 <option>Dama</option>
-              </select><br />
-              <label for="#">Tipo de prenda:</label><br />
-              <select name="Tipo prenda">
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="#">Tipo de prenda:</label>
+              <select class="form-select">
                 <option>Selecciona...</option>
                 <option>Tipo 1</option>
                 <option>Tipo 2</option>
@@ -95,9 +76,11 @@
                 <option>Tipo 4</option>
                 <option>Tipo 5</option>
                 <option>Tipo 6</option>
-              </select><br />
-              <label for="#">Talla de la prenda:</label><br />
-              <select name="Talla">
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="#">Talla de la prenda:</label>
+              <select class="form-select">
                 <option>Selecciona...</option>
                 <option>Talla XS</option>
                 <option>Talla S</option>
@@ -105,19 +88,20 @@
                 <option>Talla L</option>
                 <option>Talla XL</option>
                 <option>Talla XXL</option>
-              </select><br />
-              <label for="#">Estado de la prenda:</label><br />
-              <select name="Estado">
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="#">Estado de la prenda:</label>
+              <select class="form-select">
                 <option>Selecciona...</option>
                 <option>Excelente</option>
                 <option>Bueno</option>
                 <option>Aceptable</option>
-                <option>Talla L</option>
-                <option>Talla XL</option>
-                <option>Talla XXL</option>
-              </select><br />
-              <label for="#">Cantidad:</label><br />
-              <select name="Cantidad">
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="#">Cantidad:</label>
+              <select class="form-select">
                 <option>Selecciona...</option>
                 <option>1</option>
                 <option>2</option>
@@ -129,23 +113,23 @@
                 <option>8</option>
                 <option>9</option>
                 <option>10</option>
-              </select><br />
-              <label for="#">Fotográfia:</label><br />
-              <input type="text" placeholder="URL" required><br /><br />
-              <a href="#">Agregar prenda</a><br /><br />                      
-            </fieldset>
-            <br />
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="#">Fotográfia:</label>
+              <input type="text" class="form-control" placeholder="URL" required>
+            </div>                                  
+          </fieldset>
+          <div class="mb-3">
             <a href="#">Publicar</a>
             <a href="#">Cancelar</a>
-            <br /><br />
-          </fieldset>
-        </form>
-      </main>
-      <hr>
-      <footer>
-        <p>© El equipo de Viste Un Futuro - 2022</p>
-        <p>| Carlos Murcia | Anderson Gonzalez | Claudia Orduz | Joel Rincon |</p>
-      </footer>
-    </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>© El equipo de Viste Un Futuro - 2022</p>
+      <p>| Carlos Murcia | Anderson Gonzalez | Claudia Orduz | Joel Rincon |</p>
+    </footer>
   </body>
 </html>

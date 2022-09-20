@@ -14,30 +14,50 @@ body,header {
 }
 
 header {
-    text-align: center;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: grey;
     display: block;
+    z-index: 1000;
+}
+
+main {
+    padding-top: 40px;
+    flex: 1 0 auto;
 }
 
 footer {
+    width: 100%;
     text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: grey;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.info-usuario {
+.info-usuario, .info-clasificado {
     margin: 0 auto;
     max-width: 500px;
     width: 500px;
-    background-color: white;
-    border: 5px solid;
-    border-color: grey;
+    background-color: #a79c9ca6;
     padding: 20px;
+    margin-top: 70px;
+    text-align: justify;
+}
+
+.info-clasificado {
+    margin-bottom: 20px;
+}
+
+.lista-clasificados {
+    background-color: #a79c9ca6;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.separador-clasificados {
+    margin-top: 70px;
 }
 
 .info-usuario-botones {
@@ -45,14 +65,16 @@ footer {
     text-align: center;
 }
 
-form {
-    
+h2 {
     text-align: center;
-    padding: 50px 20px;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
     background-color: #a79c9ca6;
     margin: calc(25% + 100px);
     margin-top: 70px;
-    padding-top: 28px;
     margin-bottom: 30px
 }
 
@@ -60,24 +82,29 @@ fieldset {
     border-color: transparent;
 }
 
-hr {
-    border: none;
+h1 {
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 input, select {
-    width: 400px;
-    
+    width: 400px;    
     padding: 10px;
+    display: inline-block;
 }
 
 a {
-    background-color: #48e;
-    color: white;
+    background-color: burlywood;
+    color: black !important;
+    text-decoration: none !important;
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 a:hover {
-    background-color: #4957ec;
+    background-color: rgb(222, 208, 135);
 }
