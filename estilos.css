@@ -6,11 +6,12 @@
 
 * {
     box-sizing:border-box;
-    font-family: Streetwear, Georgia, "Times New Roman", Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
-body,header {
-    background-image: url("imagenes/fondo.jpg");
+body {
+    background-color: whitesmoke;
 }
 
 header {
@@ -40,7 +41,7 @@ footer {
     margin: 0 auto;
     max-width: 500px;
     width: 500px;
-    background-color: #a79c9ca6;
+    background-color: #a79c9cb9;
     padding: 20px;
     margin-top: 70px;
     text-align: justify;
@@ -51,13 +52,17 @@ footer {
 }
 
 .lista-clasificados {
-    background-color: #a79c9ca6;
+    background-color: #a79c9cb9;
     margin-top: 70px;
     margin-bottom: 20px;
 }
 
 .separador-clasificados {
     margin-top: 70px;
+}
+
+.card {
+    margin-top: 20px;
 }
 
 .info-usuario-botones {
@@ -72,7 +77,7 @@ h2 {
 form {
     text-align: center;
     padding: 20px;
-    background-color: #a79c9ca6;
+    background-color: #a79c9cb9;
     margin: calc(25% + 100px);
     margin-top: 70px;
     margin-bottom: 30px
@@ -83,8 +88,10 @@ fieldset {
 }
 
 h1 {
+    color: white;
     padding-top: 20px;
     padding-left: 20px;
+    font-family: Streetwear, Georgia, "Times New Roman", Times, serif;
 }
 
 input, select {
@@ -94,8 +101,8 @@ input, select {
 }
 
 a {
-    background-color: burlywood;
-    color: black !important;
+    background-color: blue;
+    color: white !important;
     text-decoration: none !important;
     padding: 10px 25px;
     text-decoration: none;
@@ -106,5 +113,9 @@ a {
 }
 
 a:hover {
-    background-color: rgb(222, 208, 135);
+    background-color: lightseagreen;
+}
+
+i {
+    color: white;
 }
