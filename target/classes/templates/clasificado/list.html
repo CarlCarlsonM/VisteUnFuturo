@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+    <head>
+        <title th:text="#{clasificado.list.headline}" />
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="d-flex flex-wrap mb-4">
+                <h1 th:text="#{clasificado.list.headline}" class="flex-grow-1" />
+                <div>
+                    <a th:href="@{/clasificados/add}" th:text="#{clasificado.list.createNew}" class="btn btn-primary ms-2" />
+                </div>
+            </div>
+            <div th:if="${clasificados.empty}" th:text="#{clasificado.list.empty}" />
+            <div th:if="${!clasificados.empty}" class="table-responsive">
+                <table class="table table-dark table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th th:text="#{clasificado.id.label}" scope="col" />
+                            <th th:text="#{clasificado.titulo.label}" scope="col" />
+                            <th th:text="#{clasificado.descripcion.label}" scope="col" />
+                            <th th:text="#{clasificado.tipoPrenda.label}" scope="col" />
+                            <th th:text="#{clasificado.generoPrenda.label}" scope="col" />
+                            <th th:text="#{clasificado.tallaPrenda.label}" scope="col" />
+                            <th th:text="#{clasificado.estadoPrenda.label}" scope="col" />
+                            <th th:text="#{clasificado.cantidadPrenda.label}" scope="col" />
+                            <th th:text="#{clasificado.usuario.label}" scope="col" />
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="clasificado : ${clasificados}">
+                            <td th:text="${clasificado.id}" />
+                            <td th:text="${clasificado.titulo}" />
+                            <td th:text="${clasificado.descripcion}" />
+                            <td th:text="${clasificado.tipoPrenda}" />
+                            <td th:text="${clasificado.generoPrenda}" />
+                            <td th:text="${clasificado.tallaPrenda}" />
+                            <td th:text="${clasificado.estadoPrenda}" />
+                            <td th:text="${clasificado.cantidadPrenda}" />
+                            <td th:text="${clasificado.usuario}" />
+                            <td>
+                                <form th:action="@{/clasificados/delete/{id}(id=${clasificado.id})}" th:data-confirm-message="#{delete.confirm}" method="post" class="js-submit-confirm float-end">
+                                    <a th:href="@{/clasificados/edit/{id}(id=${clasificado.id})}" th:text="#{clasificado.list.edit}" class="btn btn-sm btn-info" />
+                                    <button th:text="#{clasificado.list.delete}" type="submit" class="btn btn-sm btn-danger" />
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

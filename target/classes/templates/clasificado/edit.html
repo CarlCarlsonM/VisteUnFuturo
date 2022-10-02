@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{layout}">
+    <head>
+        <title th:text="#{clasificado.edit.headline}" />
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="d-flex flex-wrap mb-4">
+                <h1 th:text="#{clasificado.edit.headline}" class="flex-grow-1" />
+                <div>
+                    <a th:href="@{/clasificados}" th:text="#{clasificado.edit.back}" class="btn btn-secondary" />
+                </div>
+            </div>
+            <div th:replace="fragments/forms::globalErrors('clasificado')" />
+            <form th:action="${#httpServletRequest.requestURI}" method="post">
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='titulo')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='descripcion')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='tipoPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='generoPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='tallaPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='estadoPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='cantidadPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='fotoPrenda')" />
+                <div th:replace="fragments/forms::inputRow(object='clasificado', field='usuario', type='select')" />
+                <input type="submit" th:value="#{clasificado.edit.headline}" class="btn btn-primary mt-4" />
+            </form>
+        </div>
+    </body>
+</html>
